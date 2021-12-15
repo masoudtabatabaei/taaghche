@@ -1,0 +1,109 @@
+.card_container {
+    width: 400px;
+    padding: 0 10px;
+    max-width: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 180px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    top: -8px;
+}
+
+.card .header {
+    position: relative;
+    height: 120px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.card .header:before , .card .header:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -16px;
+    -webkit-box-shadow : inset 0 4px 6px 0 rgb(32 32 32 / 16%);
+    box-shadow: inset 0 4px 6px 0 rgb(32 32 32 / 16%);
+    z-index: 1;
+}
+
+.card .header:before {
+    right: -16px;
+}
+
+.card .header:after {
+    left: -16px;
+}
+
+.card .header .spliter_line {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    z-index: 0;
+}
+
+.card.inactive .header {
+    filter: grayscale(1);
+}
+
+.card .statusHeader {
+    background-color: #444444;
+    color: #ffffff;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .footer {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-shadow: 0 4px 6px 0 rgb(32 32 32 / 16%);
+    border-radius: 0 0 10px 10px;
+    width: 99%;
+    margin: 0 auto;
+}
+
+.card .footer .view_btn {
+    color: #35aac4;
+    cursor: pointer;
+}
+
+.card .footer .view_btn img {
+    width: 14px;
+    vertical-align: middle;
+}
+
+.cardLeaf {
+    width: 19px;
+    margin-right: 5px;
+}

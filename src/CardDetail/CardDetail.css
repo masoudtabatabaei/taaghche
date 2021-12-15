@@ -1,0 +1,213 @@
+.details_container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 15px auto 10px;
+    display: flex;
+}
+
+.details_container > div {
+    flex: 1;
+    padding: 0 12px;
+}
+
+.details_container > div:first-child {
+    flex: 1 35%;
+}
+
+.details_container > div:last-child {
+    flex: 1 65%;
+}
+
+
+.cover {
+    width: 100%;
+    height: 200px;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.cover.inactive {
+    filter: grayscale(1);
+}
+
+.reward_details {
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.getReward_btn {
+    font-family: 'IranYekan-Regular';
+    padding: 0 16px;
+    height: 40px;
+    min-width: 130px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #28918d;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.getReward_btn:disabled {
+    background-color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.details_content {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.details_content h2 {
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.details_content h3 {
+    font-size: 0.7em;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.details_content ul li {
+    font-size: 0.7em;
+    line-height: 26px;
+    margin-right: 15px;
+}
+
+.cardModal {
+    background-color: #A4A4A2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.cardModal .modalDialogueBox {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 800px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.cardModal .modalDetails {
+    display: flex;
+    align-items: center;
+}
+
+.cardModal .modalDetails > div {
+    flex: 1;
+    padding: 3px 8px;
+}
+
+.cardModal .modalDetails .content {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.cardModal .deadlineText {
+    margin: 16px 0;
+    font-size: 0.9em;
+}
+
+.cardModal .offCode {
+    display: flex;
+    align-items: center;
+}
+
+.cardModal .offCode > div {
+    height: 38px;
+    line-height: 38px;
+    flex: 1;
+    font-size: 0.9em;
+}
+
+.cardModal .offCode > div:first-child {
+    flex: 0 1 35%;
+}
+
+.cardModal .offCode .codeBox {
+    background-color: #dddddd;
+    text-align: center;
+    border: 1px dashed #888888;
+    border-radius: 8px;
+}
+
+.cardModal .copyButton {
+    border-radius: 8px;
+    width: 90%;
+}
+
+.cardModal button {
+    background-color: #ffffff;
+    border: 1px solid #28918d;
+    color: #28918d;
+    text-align: center;
+    height: 100%;
+}
+
+.cardModal button:hover {
+    background-color: #28918d;
+    color: #ffffff;
+}
+
+.cardModal .closeModalButton {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 25px;
+    height: 38px;
+    line-height: 38px;
+}
+
+
+@media screen and (max-width:600px) {
+    .details_container {
+        flex-direction: column;
+        padding: 0 5px;
+    }
+
+    .details_content {
+        margin-bottom: 72px;
+    }
+
+    .cover {
+        margin-bottom: 10px;
+    }
+
+    .reward_details {
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        left: 0;
+        width: 100%;
+        flex-direction: row-reverse;
+        box-shadow: 0 -4px 8px 0 rgb(32 32 32 / 16%);
+    }
+
+    .cardModal .modalDialogueBox {
+        max-width: 90%;
+    }
+
+    .cardModal .modalDetails {
+        flex-direction: column-reverse;
+    }
+}

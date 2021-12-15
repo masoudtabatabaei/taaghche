@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_2223" fill="#fff" stroke="#707070" d="M0 0H32V32H0z" transform="translate(193 115)"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:#68ad45}
+        </style>
+    </defs>
+    <g id="Mask_Group_225" clip-path="url(#clip-path)" transform="translate(-193 -115)">
+        <g id="leaf_2_" transform="translate(193.587 123.356)">
+            <g id="Group_2219" transform="translate(0 -2.42)">
+                <path id="Path_3714" d="M22.648.319A.516.516 0 0 0 22.172 0C2.161 0 0 8.293 0 11.859a7.63 7.63 0 0 0 .847 3.561.515.515 0 0 0 .446.277.547.547 0 0 0 .458-.258c1.351-2.335 5.177-8.1 11.5-11.159a.516.516 0 1 1 .452.927c-.476.231-.934.483-1.383.744-.171.1-.337.206-.505.31-.253.157-.5.317-.746.482s-.482.33-.717.5l-.216.163C3.842 12.094 0 19.569 0 22.172a.516.516 0 1 0 1.031 0 12.189 12.189 0 0 1 1.638-4.526 9.458 9.458 0 0 0 6.1 1.948c6.622 0 8.009-6.3 8.753-9.687A17.466 17.466 0 0 1 22.536.88a.513.513 0 0 0 .112-.561z" class="cls-3" transform="translate(0)"/>
+            </g>
+            <g id="Group_2220" transform="translate(30.826 -3.279) rotate(120)">
+                <circle id="Ellipse_513" cx=".522" cy=".522" r=".522" class="cls-3" transform="translate(5.41 0)"/>
+                <circle id="Ellipse_514" cx=".522" cy=".522" r=".522" class="cls-3" transform="translate(4.487 3.798)"/>
+                <circle id="Ellipse_515" cx="1.305" cy="1.305" r="1.305" class="cls-3" transform="translate(7.545 2.856)"/>
+                <circle id="Ellipse_516" cx=".627" cy=".627" r=".627" class="cls-3" transform="translate(2.129 6.064)"/>
+                <circle id="Ellipse_517" cx=".418" cy=".418" r=".418" class="cls-3" transform="translate(5.001 9.319)"/>
+                <circle id="Ellipse_518" cx="1.201" cy="1.201" r="1.201" class="cls-3" transform="translate(0 1.229)"/>
+                <circle id="Ellipse_519" cx=".731" cy=".731" r=".731" class="cls-3" transform="translate(13.149 3.738)"/>
+            </g>
+        </g>
+    </g>
+</svg>

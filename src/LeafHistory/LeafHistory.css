@@ -1,0 +1,221 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main_container {
+    position: relative;
+    width: 100%;
+    /* background-color: #f8f5f5; */
+    height: calc(100vh - 55px);
+}
+
+.calendar {
+    background-color: #dddddd;
+    height: 55px;
+    line-height: 55px;
+}
+
+.rooyesh_container {
+    /* height: calc(100vh - 120px); */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.leaf_header {
+    width: 55%;
+    margin: 0 auto 8px;
+    text-align: left;
+    position: relative;
+}
+
+
+.leaf_header .leaf_number {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    min-width: 100px;
+    border-radius: 8px;
+    background-color: #283c1d;
+    color: #ffffff;
+}
+
+.history_container {
+    width: 100%;
+    overflow-y: auto;
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.history {
+    padding: 10px 15px;
+    width: 55%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    /* background-color: #ccc; */
+}
+
+.leafTop {
+    position: relative;
+}
+
+.leafTop img {
+    position: absolute;
+    right: 38px;
+    top: 11px;
+}
+
+.goldoon {
+    text-align: right;
+}
+
+.stem_container {
+    width: 100%;
+}
+
+.leafback {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.leafback img {
+    position: relative;
+    bottom: -22px;
+    right: 12px;
+}
+
+.leafback .leaf_info {
+    flex: 1;
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.leafback .leaf_info > div {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.leafback .leaf_info .description {
+    flex: 1;
+    background-color: #eeeeee;
+    border-radius: 4px 25px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px #317e07;
+}
+
+.leafback.consumed .leaf_info .description {
+    border-radius: 25px 4px;
+    box-shadow: 0 3px 6px #fa9b1e;
+}
+
+.leafback.fetching .leaf_info .description {
+    border-radius: 4px;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 5px 6px #000;
+}
+
+.leafback .leaf_info .time {
+    color: #777777;
+    font-weight: 600;
+    font-size: 0.95em;
+    min-width: 50px;
+    text-align: center;
+}
+
+.leafback .leaf_history {
+    position: relative;
+    padding-left: 32px;
+}
+
+.leafback .leaf_history:before {
+    content: '';
+    position: absolute;
+    background-image: url('../assets/img/leaf-green.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+    left: 2px;
+}
+
+.leafback.consumed .leaf_history:before {
+    background-image: url('../assets/img/leaf-consume.png');
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .history , .leaf_header {
+        width: 95%;
+    }
+
+    .leafback .leaf_info {
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 4px 25px;
+        padding: 11px 10px;
+        margin-right: 10px;
+        box-shadow: 0 3px 6px #317e07;
+    }
+
+    .leafback .leaf_info > div {
+        padding: 0;
+    }
+
+    .leafback.consumed .leaf_info {
+        border-radius: 25px 4px;
+    }
+
+    .leafback.consumed .leaf_info {
+        box-shadow: 0 3px 6px #fa9b1e;
+    }
+
+    .leafback .leaf_info .description , 
+    .leafback.consumed .leaf_info .description {
+        flex-direction: column;
+        background: transparent;
+        box-shadow: none;
+        border-radius: unset;
+        align-items: flex-start;
+    }
+
+    .leafback.fetching .leaf_info {
+        border-radius: 4px;
+        background-color: #333333;
+        color: #ffffff;
+        text-align: center;
+        justify-content: center;
+        box-shadow: 0 5px 6px #000;
+    }
+
+    .leafback.fetching .leaf_info .description {
+        box-shadow: none;
+    }
+
+    .leafback .leaf_info .time {
+        height: auto;
+        padding: 5px 0;
+    }
+
+    .leafback .leaf_history {
+        align-self: self-end;
+    }
+}
